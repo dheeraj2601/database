@@ -33,10 +33,13 @@ Search engine (Elasticsearch)
 Improving user experience with faster search results
 Logging
 
-
 Lightweight
 sqlite
 
 Reference :
 https://www.infoworld.com/article/3268871/database/how-to-choose-the-right-type-of-database-for-your-enterprise.html
 
+
+
+ /etc/resolv.conf
+nameserver xxx.xxx.xxx.xxx
