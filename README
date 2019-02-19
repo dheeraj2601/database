@@ -43,3 +43,8 @@ https://www.infoworld.com/article/3268871/database/how-to-choose-the-right-type-
 
  /etc/resolv.conf
 nameserver xxx.xxx.xxx.xxx
+
+
+pip install --upgrade numpy
+
+
