@@ -32,6 +32,13 @@ with sqlite3.connect(db_filename) as conn:
     """)
     for row in cursor.fetchmany(5):
         print '%s' % ( row[0] )
+        
+    print '\n\n'
+    
+    # Retrieving schema    
+    cursor.execute("select sql from sqlite_master where sql not NULL")
+    for row in cursor.fetchall():
+        print row[0]
 
     print '\n\n'
     # Retrieving schema of specific table
