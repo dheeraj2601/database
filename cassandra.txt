@@ -1,0 +1,26 @@
+
+DataStax C/C++ Driver for Apache Cassandra :
+
+https://github.com/datastax/cpp-driver
+
+
+
+
+To export keyspace schema:
+cqlsh -e "DESC KEYSPACE user" > user_schema.cql
+
+
+To export entire database schema:
+cqlsh -e "DESC SCHEMA" > db_schema.cql
+
+
+To import schema open terminal at 'user_schema.cql' ('db_schema.cql') location (or you can specify the full path) and open cqlsh shell. Then use the following command to import keyspace schema:
+source 'user_schema.cql'
+
+
+To import full database schema:
+source 'db_schema.cql'
+
+
+
+https://docs.datastax.com/en/dse/5.1/dse-admin/datastax_enterprise/production/singleDCperWorkloadType.html
